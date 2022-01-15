@@ -10,7 +10,8 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/jsx-runtime',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:jsdoc/recommended'
   ],
   overrides: [
     {
@@ -41,6 +42,7 @@ module.exports = {
     'import/order': ['off'],
     'import/prefer-default-export': ['off'],
     indent: ['error', 2],
+    'jsdoc/no-undefined-types': ['off'],
     'linebreak-style': ['error', 'unix'],
     'prettier/prettier': [
       'error',

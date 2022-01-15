@@ -11,9 +11,23 @@
     "test": "is-ci \"test:coverage\" \"test:watch\"",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch"
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
+    "test:dom": "jest --config etc/jest/jest.client.js",
+    "lint": "jest --config etc/jest/jest.lint.js",
+    "lint-staged": "lint-staged",
+    "husky:init": "husky install",
+    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
+    "eslint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\""
+  },
+  "lint-staged": {
+    "./src/**/*.{ts,js,jsx,tsx}": [
+      "yarn run eslint --fix",
+      "yarn run format"
+    ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.129",
     "@testing-library/jest-dom": "^5.16.1",
@@ -26,8 +40,11 @@
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "@typescript-eslint/parser": "^5.9.1",
     "chokidar": "^3.5.2",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsdoc": "^37.6.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
@@ -36,7 +53,9 @@
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-webpack-plugin": "^3.1.1",
     "file-loader": "^6.2.0",
+    "git-cz": "^4.8.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
     "is-ci-cli": "^2.2.0",
     "jest": "^27.4.7",
     "jest-environment-jsdom": "^27.4.6",
@@ -44,6 +63,7 @@
     "jest-runner-eslint": "^1.0.0",
     "jest-watch-select-projects": "^2.0.0",
     "jest-watch-typeahead": "^1.0.0",
+    "lint-staged": "^12.1.7",
     "prettier": "^2.5.1",
     "swc-loader": "^0.1.15",
     "ts-jest": "^27.1.3",
