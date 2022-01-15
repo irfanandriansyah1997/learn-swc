@@ -45,6 +45,7 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
+        printWidth: 80,
         singleQuote: true,
         trailingComma: 'none'
       },
@@ -59,6 +60,17 @@ module.exports = {
       {
         groups: [
           ['^@?\\w'],
+          [
+            '@components/',
+            '@hooks/',
+            '@pages/',
+            '@utils/',
+            '@assets/',
+            '@features/',
+            '@routing/',
+            '@styles/',
+            '@interface/'
+          ],
           ['@/'],
           ['(?=.*.interface$)'],
           ['(?=.*.const$)'],
@@ -82,5 +94,10 @@ module.exports = {
     ],
     'sort-imports': ['off'],
     'sort-keys-fix/sort-keys-fix': ['error']
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 };

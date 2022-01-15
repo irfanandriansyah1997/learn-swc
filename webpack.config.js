@@ -1,3 +1,5 @@
+/* eslint-disable sort-keys-fix/sort-keys-fix */
+
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
@@ -46,5 +48,22 @@ module.exports = {
       filename: './index.html',
       template: path.join(__dirname, 'public/index.html')
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      // Library Directory
+      '@/helper': path.resolve(__dirname, './src/library/helper/'),
+      '@/modules': path.resolve(__dirname, './src/library/modules/'),
+
+      // Main Directory
+      '@/assets': path.resolve(__dirname, './src/assets/'),
+      '@/library': path.resolve(__dirname, './src/library/'),
+      '@/pages': path.resolve(__dirname, './src/pages/'),
+      '@/routing': path.resolve(__dirname, './src/routing/'),
+      '@/style': path.resolve(__dirname, './src/style/'),
+
+      // Base Directory
+      '@': path.resolve(__dirname, './src/')
+    }
+  }
 };
