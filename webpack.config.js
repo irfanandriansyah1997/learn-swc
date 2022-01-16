@@ -64,6 +64,7 @@ module.exports = {
 
       // Base Directory
       '@': path.resolve(__dirname, './src/')
-    }
+    },
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
   }
 };

@@ -1,6 +1,6 @@
 {
   "name": "swc-init",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "implement SWC for typescript compiler",
   "main": "index.js",
   "repository": "git@github.com:irfanandriansyah1997/learn-swc.git",
