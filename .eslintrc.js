@@ -12,7 +12,8 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:prettier/recommended',
     'plugin:jsdoc/recommended',
-    'plugin:typescript-sort-keys/recommended'
+    'plugin:typescript-sort-keys/recommended',
+    'plugin:react-hooks/recommended'
   ],
   overrides: [
     {
