@@ -12,6 +12,7 @@ module.exports = {
       directory: path.join(__dirname, 'build')
     }
   },
+  devtool: 'eval-source-map',
   entry: ['./src/index.tsx'],
   mode: 'development',
   module: {
@@ -22,6 +23,8 @@ module.exports = {
         use: {
           loader: 'swc-loader',
           options: {
+            // Enable source map
+            sourceMaps: true,
             jsc: {
               parser: {
                 syntax: 'typescript'
@@ -29,6 +32,11 @@ module.exports = {
             }
           }
         }
+      },
+      {
+        test: /\.(graphql|gql)$/,
+        exclude: /node_modules/,
+        loader: 'graphql-tag/loader'
       }
     ]
   },
@@ -51,19 +59,17 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      // Library Directory
-      '@/helper': path.resolve(__dirname, './src/library/helper/'),
-      '@/modules': path.resolve(__dirname, './src/library/modules/'),
-
-      // Main Directory
       '@/assets': path.resolve(__dirname, './src/assets/'),
-      '@/library': path.resolve(__dirname, './src/library/'),
+      '@/components': path.resolve(__dirname, './src/components/'),
+      '@/contract': path.resolve(__dirname, './src/contract/'),
+      '@/features': path.resolve(__dirname, './src/features/'),
+      '@/hooks': path.resolve(__dirname, './src/hooks/'),
+      '@/interface': path.resolve(__dirname, './src/interface/'),
       '@/pages': path.resolve(__dirname, './src/pages/'),
       '@/routing': path.resolve(__dirname, './src/routing/'),
-      '@/style': path.resolve(__dirname, './src/style/'),
-
-      // Base Directory
+      '@/styles': path.resolve(__dirname, './src/styles/'),
       '@': path.resolve(__dirname, './src/')
-    }
+    },
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
   }
 };

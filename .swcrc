@@ -15,14 +15,27 @@
     },
     "target": "es2018",
     "keepClassNames": true,
-    "loose": true
+    "loose": true,
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@interface/*": ["./src/interface/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@features/*": ["./src/features/*"],
+      "@routing/*": ["./src/routing/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@/*": ["./src/*"]
+    }
   },
   "module": {
     "type": "commonjs",
     "strict": true,
     "strictMode": true,
     "lazy": false,
-    "noInterop": false
+    "noInterop": true
   },
   "sourceMaps": "inline"
 }

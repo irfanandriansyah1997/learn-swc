@@ -29,15 +29,16 @@
     // "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
     "baseUrl": "./",                                     /* Specify the base directory to resolve non-relative module names. */
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@pages/*": ["src/pages/*"],
-      "@utils/*": ["src/utils/*"],
       "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@contract/*": ["src/contract/*"],
       "@features/*": ["src/features/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@interface/*": ["src/interface/*"],
+      "@pages/*": ["src/pages/*"],
       "@routing/*": ["src/routing/*"],
       "@styles/*": ["src/styles/*"],
-      "@interface/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
       "@/*": ["src/*"]
     },
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
