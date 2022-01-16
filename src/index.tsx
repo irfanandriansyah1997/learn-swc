@@ -1,7 +1,7 @@
 import { render } from 'react-dom';
 
-import Homepage from '@components/homepage';
 import { GraphqlProvider } from '@utils/graphql';
+import PokemonListContainer from '@features/pokemon-list';
 
 /**
  * Main Apps Component
@@ -13,7 +13,7 @@ import { GraphqlProvider } from '@utils/graphql';
  */
 const Apps = () => (
   <GraphqlProvider>
-    <Homepage />
+    <PokemonListContainer />
   </GraphqlProvider>
 );
 

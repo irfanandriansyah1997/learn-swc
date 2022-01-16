@@ -1904,7 +1904,7 @@
     semver "^7.3.5"
     tsutils "^3.21.0"
 
-"@typescript-eslint/experimental-utils@5.9.1":
+"@typescript-eslint/experimental-utils@5.9.1", "@typescript-eslint/experimental-utils@^5.0.0":
   version "5.9.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-5.9.1.tgz#8c407c4dd5ffe522329df6e4c9c2b52206d5f7f1"
   integrity sha512-cb1Njyss0mLL9kLXgS/eEY53SZQ9sT519wpX3i+U457l2UXRDuo87hgKfgRazmu9/tQb0x2sr3Y0yrU+Zz0y+w==
@@ -3951,6 +3951,15 @@ eslint-plugin-sort-keys-fix@^1.1.2:
     natural-compare "^1.4.0"
     requireindex "~1.2.0"
 
+eslint-plugin-typescript-sort-keys@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-typescript-sort-keys/-/eslint-plugin-typescript-sort-keys-2.1.0.tgz#f51764518aa512d83df9ba68ab2520b7b85ece2d"
+  integrity sha512-ET7ABypdz19m47QnKynzNfWPi4CTNQ5jQQC1X5d0gojIwblkbGiCa5IilsqzBTmqxZ0yXDqKBO/GBkBFQCOFsg==
+  dependencies:
+    "@typescript-eslint/experimental-utils" "^5.0.0"
+    json-schema "^0.4.0"
+    natural-compare-lite "^1.4.0"
+
 eslint-scope@5.1.1, eslint-scope@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.1.1.tgz#e786e59a66cb92b3f6c1fb0d508aab174848f48c"
@@ -4700,7 +4709,7 @@ graphql-sse@^1.0.1:
   resolved "https://registry.yarnpkg.com/graphql-sse/-/graphql-sse-1.0.6.tgz#4f98e0a06f2020542ed054399116108491263224"
   integrity sha512-y2mVBN2KwNrzxX2KBncQ6kzc6JWvecxuBernrl0j65hsr6MAS3+Yn8PTFSOgRmtolxugepxveyZVQEuaNEbw3w==
 
-graphql-tag@^2.11.0, graphql-tag@^2.12.3:
+graphql-tag@^2.11.0, graphql-tag@^2.12.3, graphql-tag@^2.12.6:
   version "2.12.6"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.12.6.tgz#d441a569c1d2537ef10ca3d1633b48725329b5f1"
   integrity sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==
@@ -6037,6 +6046,11 @@ json-schema-traverse@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz#ae7bcb3656ab77a73ba5c49bf654f38e6b6860e2"
   integrity sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==
+
+json-schema@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/json-schema/-/json-schema-0.4.0.tgz#f7de4cf6efab838ebaeb3236474cbba5a1930ab5"
+  integrity sha512-es94M3nTIfsEPisRafak+HDLfHXnKBhV3vU5eqPcS3flIWqcxJWgXHXiey3YrpaNsanY5ei1VoYEbOzijuq9BA==
 
 json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"

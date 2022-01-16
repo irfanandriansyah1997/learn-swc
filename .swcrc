@@ -20,13 +20,13 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
+      "@interface/*": ["./src/interface/*"],
       "@pages/*": ["./src/pages/*"],
       "@utils/*": ["./src/utils/*"],
       "@assets/*": ["./src/assets/*"],
       "@features/*": ["./src/features/*"],
       "@routing/*": ["./src/routing/*"],
       "@styles/*": ["./src/styles/*"],
-      "@interface/*": ["./src/styles/*"],
       "@/*": ["./src/*"]
     }
   },
