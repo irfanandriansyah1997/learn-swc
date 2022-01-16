@@ -17,7 +17,8 @@
     "lint-staged": "lint-staged",
     "husky:init": "husky install",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
-    "eslint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\""
+    "eslint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
+    "generate:contract": "graphql-codegen"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
@@ -28,6 +29,9 @@
   "devDependencies": {
     "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
+    "@graphql-codegen/cli": "^2.3.1",
+    "@graphql-codegen/typescript": "^2.4.2",
+    "@graphql-codegen/typescript-operations": "^2.2.2",
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.129",
     "@testing-library/jest-dom": "^5.16.1",

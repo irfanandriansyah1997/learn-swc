@@ -1,0 +1,8 @@
+schema:
+  - https://graphql-pokeapi.vercel.app/api/graphql
+
+generates:
+  ./src/contract/graphql/index.ts:
+    plugins:
+      - typescript
+      - typescript-operations
