@@ -12,6 +12,7 @@ module.exports = {
       directory: path.join(__dirname, 'build')
     }
   },
+  devtool: 'eval-source-map',
   entry: ['./src/index.tsx'],
   mode: 'development',
   module: {
@@ -22,6 +23,8 @@ module.exports = {
         use: {
           loader: 'swc-loader',
           options: {
+            // Enable source map
+            sourceMaps: true,
             jsc: {
               parser: {
                 syntax: 'typescript'
