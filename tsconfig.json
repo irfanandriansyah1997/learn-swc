@@ -34,7 +34,7 @@
       "@contract/*": ["src/contract/*"],
       "@features/*": ["src/features/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@interface/*": ["src/styles/*"],
+      "@interface/*": ["src/interface/*"],
       "@pages/*": ["src/pages/*"],
       "@routing/*": ["src/routing/*"],
       "@styles/*": ["src/styles/*"],
