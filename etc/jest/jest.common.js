@@ -10,15 +10,16 @@ module.exports = {
     path.join(__dirname)
   ],
   moduleNameMapper: {
-    '^@components(.*)$': '<rootDir>/src/components$1',
-    '^@hooks(.*)$': '<rootDir>/src/hooks$1',
-    '^@pages(.*)$': '<rootDir>/src/pages$1',
-    '^@utils(.*)$': '<rootDir>/src/utils$1',
     '^@assets(.*)$': '<rootDir>/src/assets$1',
+    '^@components(.*)$': '<rootDir>/src/components$1',
+    '^@contract(.*)$': '<rootDir>/src/contract$1',
     '^@features(.*)$': '<rootDir>/src/features$1',
+    '^@hooks(.*)$': '<rootDir>/src/hooks$1',
+    '^@interface(.*)$': '<rootDir>/src/interface$1',
+    '^@pages(.*)$': '<rootDir>/src/pages$1',
     '^@routing(.*)$': '<rootDir>/src/routing$1',
     '^@styles(.*)$': '<rootDir>/src/styles$1',
-    '^@interface(.*)$': '<rootDir>/src/interface$1',
+    '^@utils(.*)$': '<rootDir>/src/utils$1',
     '^@/(.*)$': '<rootDir>/src/$1'
   },
   modulePathIgnorePatterns: ['<rootDir>/cypress/'],
