@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 import { GraphqlProvider } from '@utils/graphql';
 import PokemonListContainer from '@features/pokemon-list';
 
+import StyleProvider from './styles';
+
 /**
  * Main Apps Component
  *
@@ -13,7 +15,9 @@ import PokemonListContainer from '@features/pokemon-list';
  */
 const Apps = () => (
   <GraphqlProvider>
-    <PokemonListContainer />
+    <StyleProvider>
+      <PokemonListContainer />
+    </StyleProvider>
   </GraphqlProvider>
 );
 

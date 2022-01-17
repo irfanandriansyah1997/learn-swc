@@ -24,3 +24,14 @@ export type MaybeType<T> = T | undefined;
  * @since 0.0.2
  */
 export type NullAble<T> = T | null;
+
+/**
+ * Generate Attribute From Key Object
+ *
+ * @author Irfan Andriansyah <irfan.andriansyah@tokopedia.com>
+ * @since 0.0.3
+ */
+export type GenTypeAttribute<
+  T extends Record<string, unknown>,
+  K extends keyof T
+> = T[K];
