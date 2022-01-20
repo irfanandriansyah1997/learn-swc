@@ -37,9 +37,11 @@ module.exports = {
     'simple-import-sort',
     'sort-destructure-keys',
     'sort-keys-fix',
-    'react-hooks'
+    'react-hooks',
+    '@emotion'
   ],
   rules: {
+    '@emotion/jsx-import': 'error',
     '@typescript-eslint/no-var-requires': ['off'],
     'import/order': ['off'],
     'import/prefer-default-export': ['off'],
@@ -49,6 +51,8 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
+        bracketSameLine: false,
+        jsxBracketSameLine: false,
         printWidth: 80,
         singleQuote: true,
         trailingComma: 'none'

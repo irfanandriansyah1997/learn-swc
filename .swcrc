@@ -10,7 +10,9 @@
       "legacyDecorator": true,
       "decoratorMetadata": true,
       "react": {
-        "runtime": "automatic"
+        "runtime": "automatic",
+        "refresh": true,
+        "importSource": "@emotion/react"
       }
     },
     "target": "es2018",

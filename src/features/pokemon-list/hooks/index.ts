@@ -37,8 +37,6 @@ export const usePokemonList = (): IPokemonListHooks => {
       if (pokemons) {
         const { count, nextOffset, results } = pokemons;
 
-        console.debug(translatePokemonListToBasePokemon(results));
-
         setPokemons((currentPokemon) => {
           return [
             ...currentPokemon,

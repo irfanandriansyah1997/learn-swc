@@ -1,4 +1,15 @@
+import styled from '@emotion/styled';
+
+import { getColor } from '@styles/mixins';
+
 import { usePokemonList } from './hooks';
+
+const Image0 = styled.div`
+  background: ${getColor('blue')};
+  width: 100%;
+  height: 10px;
+  background-size: contain;
+`;
 
 /**
  * Pokemon List Componet
@@ -11,7 +22,11 @@ import { usePokemonList } from './hooks';
 const PokemonListContainer = () => {
   usePokemonList();
 
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <Image0></Image0>
+    </div>
+  );
 };
 
 export default PokemonListContainer;
