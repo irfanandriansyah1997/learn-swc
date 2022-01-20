@@ -2,6 +2,8 @@ import { Theme } from '@emotion/react';
 
 import type { IThemeConfig } from '@styles/constant';
 
+export * from './general-props.interface';
+
 /**
  * Style Props Interface
  *

@@ -1,4 +1,5 @@
 export * from './error.interface';
+export * from './event.interface';
 export * from './formatted-value.interface';
 
 /**

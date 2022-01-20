@@ -1,7 +1,9 @@
-import { ThemeProvider } from '@emotion/react';
+import { Global, ThemeProvider } from '@emotion/react';
 import { PropsWithChildren } from 'react';
 
-import { THEME_CONSTANT } from './constant';
+import { BASIC_STYLE, THEME_CONSTANT } from './constant';
+
+export * from './styles/general.styles';
 
 /**
  * Style Provider
@@ -13,7 +15,10 @@ import { THEME_CONSTANT } from './constant';
  */
 const StyleProvider = ({ children }: PropsWithChildren<unknown>) => {
   return (
-    <ThemeProvider theme={{ ...THEME_CONSTANT }}>{children}</ThemeProvider>
+    <ThemeProvider theme={{ ...THEME_CONSTANT }}>
+      <Global styles={BASIC_STYLE}></Global>
+      {children}
+    </ThemeProvider>
   );
 };
 

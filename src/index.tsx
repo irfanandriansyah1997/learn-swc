@@ -1,5 +1,6 @@
 import { render } from 'react-dom';
 
+import Header from '@components/header';
 import { GraphqlProvider } from '@utils/graphql';
 import PokemonListContainer from '@features/pokemon-list';
 
@@ -13,12 +14,15 @@ import StyleProvider from './styles';
  * @returns {JSX.Element} react elementss
  * @since 0.0.2
  */
-const Apps = () => (
-  <GraphqlProvider>
-    <StyleProvider>
-      <PokemonListContainer />
-    </StyleProvider>
-  </GraphqlProvider>
-);
+const Apps = () => {
+  return (
+    <GraphqlProvider>
+      <StyleProvider>
+        <Header />
+        <PokemonListContainer />
+      </StyleProvider>
+    </GraphqlProvider>
+  );
+};
 
 render(<Apps />, document.querySelector('#root'));
